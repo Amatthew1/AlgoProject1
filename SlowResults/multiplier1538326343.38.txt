@@ -1,0 +1,21 @@
+Multiplier ran
+ Size of inputs: 8
+ Number of inputs: 25
+Total run time: 5224.90799999
+Filename: ProjectOne.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    24     12.6 MiB     12.6 MiB   @profile(stream=outputFile)
+    25                             def executeMultiply(numberArray):
+    26                             
+    27     12.6 MiB      0.0 MiB       startStamp = time.time()
+    28     12.6 MiB     -1.3 MiB       for index in range(len(numberArray)-1): #skip the last input
+    29     12.6 MiB     -2.0 MiB           if index%5 == 0:
+    30     12.6 MiB     -0.4 MiB               print str(index) + " runs completed so far"        
+    31     12.6 MiB     -2.1 MiB           multiplyQuick(int(numberArray[index]),numberArray[index+1])
+    32     12.5 MiB     -0.1 MiB       totalRuntime = time.time() - startStamp 
+    33                                 
+    34     12.5 MiB      0.0 MiB       outputFile.write("Total run time: "+ str(totalRuntime) + "\n")
+
+

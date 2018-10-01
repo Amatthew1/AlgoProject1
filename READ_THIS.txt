@@ -1,0 +1,4 @@
+python memory_profiler must be installed
+https://pypi.org/project/memory_profiler/
+
+type the following into the command line: python Project1.py <sizeInputs> <numInputs>
