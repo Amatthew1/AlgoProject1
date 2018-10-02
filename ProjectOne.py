@@ -26,8 +26,6 @@ def executeMultiply(numberArray):
 
     startStamp = time.time()
     for index in range(len(numberArray)-1): #skip the last input
-        if index%5 == 0:
-            print str(index) + " runs completed so far"        
         multiplyQuick(int(numberArray[index]),numberArray[index+1])
     totalRuntime = time.time() - startStamp 
     

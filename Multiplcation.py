@@ -36,9 +36,6 @@ def multiplyQuick(num1, num2):
     sum = 0
     for times in genrange(0, num2-1):
         sum += num1
-        if times%1000 == 0:
-            print str(times) + " of " + str(num2)
-            print "total time taken" + str(startStamp-time.time())
 
 def decToBin(number):
 
